@@ -1,6 +1,16 @@
 # EEG Classification API
 
-## Requirements
+## Introduction
+### Motor Imagery Classification model ([EEGNetv4](https://arxiv.org/abs/1611.08024))
+
+
+### API
+!!! danger Warning
+    Warning
+
+## Getting Started
+
+### Requirements
 To reproduce exact results, I recommend installing an environment identical to mine.
 
 First, create a new conda environment with
@@ -13,14 +23,14 @@ Then, install the remaining dependencies:
 pip install -r requirements.txt
 ```
 
-## Accessing the API
-### Running the server
+### Usage
+#### Running the server
 
 ```
 python server.py
 ```
 
-### Sending requests
+#### Sending requests
 
 ```
 python request.py
