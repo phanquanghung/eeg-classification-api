@@ -1,0 +1,6 @@
+Braindecode==0.6
+Flask==2.2.2
+numpy==1.23.3
+pylsl==1.16.0
+requests==2.28.1
+torch==1.12.1
