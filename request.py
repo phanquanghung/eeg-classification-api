@@ -1,7 +1,11 @@
 import requests
 from pylsl import StreamInlet, resolve_stream
 
+# 3 classes model
 url = 'http://localhost:5000/api'
+
+# 4 classes model
+# url = 'http://localhost:5001/api'
 
 def send_eeg():
 	streams = resolve_stream('name', 'EmotivDataStream-EEG')
