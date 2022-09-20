@@ -5,7 +5,7 @@
 > This code is converted from different notebooks, so apprehently it is not ideal for reproducibility, or production. This must be carefully examined before being put into use.
 
 ## Introduction
-**EEG Classification API** is an API for classifying EEG data, using [EEGNet](https://arxiv.org/abs/1611.08024) architecture. It was created especially for projects belonging to HMI Laboratory, VNU-UET.
+**EEG Classification API** is an API for classifying EEG motor imagery data, using [EEGNet](https://arxiv.org/abs/1611.08024) architecture. It was created especially for projects belonging to HMI Laboratory, VNU-UET.
 
 ### Classification Models
 
@@ -38,7 +38,7 @@ It is not necessary to train the models because pre-trained weights for both mod
 
 The API is divided into two parts, **server** and **request**. The server loads the model and handles POST requests, and then returns the results to the client side.
 
-While it should be noted that the input data must include full (32) channels, the transfer option by chunk (32) is also recommended. If implemented correctly, the model will make a prediction approximately every 2 seconds.
+While it should be noted that the input data must include full (32) channels, the transfer option by chunk (32) is also recommended. If implemented correctly, the server will return a prediction approximately every 2 seconds.
 
 ## Getting Started
 
