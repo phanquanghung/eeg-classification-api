@@ -32,7 +32,7 @@ Four electrodes are omitted in the setup of this model, including `['FT9', 'PO9'
 > Model #2 was passed into the API without being tested for correctness. Users should exercise with extreme caution and compare with the [original model repository](https://github.com/txdat/bci-motor-imagery/blob/master/notebooks/eeg_final.ipynb) if necessary. In other words, consider this model #2's code just to demonstrate its usability.
 
 #### Pre-trained Weight
-It is not necessary to train the models because pre-trained weights for both models, `three_classes.pth` (for model #1) and `EEGNet8,4_nonEA.ckpt` (for model #2), is already included in the repo. 
+It is not necessary to train the models because pre-trained weights for both models, `three_classes.pth` (for model #1) and `EEGNet8,4_nonEA.ckpt` (for model #2), are already included in the repo. 
 
 ### API
 
