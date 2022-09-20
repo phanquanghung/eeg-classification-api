@@ -17,7 +17,7 @@ It is not necessary to train the model because pre-trained weight, `three_classe
 ### API
 > **Warning**
 > 
-> This code is converted from notebook, so apprehently it is not ideal for reproducibility, or production. This must be carefully examined before being put into use.
+> This code is converted from different notebooks, so apprehently it is not ideal for reproducibility, or production. This must be carefully examined before being put into use.
 
 The API is divided into two parts, `server.py` and `request.py`. The server loads the model and handles POST requests, and then returns the results to the client side.
 
