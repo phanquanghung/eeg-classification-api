@@ -55,7 +55,7 @@ While the `server.py` file is complete and requires almost no editing to run, `r
 python request.py
 ```
 
-If not using Lab Streaming Layer, installer can experiment with random numbers in `pseudo_test.py` file.
+If not using Lab Streaming Layer, installer can experiment with random numbers in `pseudo_request.py` file.
 
 ```
 python pseudo_request.py
