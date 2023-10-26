@@ -2,7 +2,7 @@
 
 > **Warning**
 > 
-> This code is converted from different notebooks, so apprehently it is not ideal for reproducibility, or production. This must be carefully examined before being put into use.
+> This code is converted from different notebooks, so apparently it is not ideal for reproducibility, or production. This must be carefully examined before being put into use.
 
 ## Introduction
 **EEG Classification API** is an API for classifying EEG motor imagery data, using [EEGNet](https://arxiv.org/abs/1611.08024) architecture. It was created especially for projects belonging to HMI Laboratory, VNU-UET.
@@ -36,9 +36,9 @@ It is not necessary to train the models because pre-trained weights for both mod
 
 ### API
 
-The API is divided into two parts, **server** and **request**. The server loads the model and handles POST requests, and then returns the results to the client side.
+The API is divided into two parts, **server** and **request**. The server loads the model, handles POST requests, and then returns the results to the client.
 
-While it should be noted that the input data must include full (32) channels, the transfer option by chunk (32) is also recommended. If implemented correctly, the server will return a prediction approximately every 2 seconds.
+While it should be noted that the input data must include total (32) channels, the transfer option by chunk (32) is also recommended. If implemented correctly, the server will return a prediction approximately every 2 seconds.
 
 ## Getting Started
 
@@ -63,7 +63,7 @@ pip install -r requirements.txt
 
 > **Note**
 > 
-> The default ports for server with model #1 and #2 are `5000` and `5001` respectively. Make sure you have set the correct port in `request.py` file.
+> The default ports for server with models #1 and #2 are `5000` and `5001` respectively. Make sure you have set the correct port in the `request.py` file.
 
 Launch the server with model #1 on a separate terminal from request.py with:
 
@@ -79,15 +79,15 @@ python server_4classes.py
 
 #### Sending requests
 
-While the server is somewhat complete and requires almost no editing to run, `request.py` file was written as minimally as possible so that users can use it as a template when coding their own requests. 
+While the server is somewhat complete and requires almost no editing to run, the `request.py` file was written as minimally as possible so that users can use it as a template when coding their own requests. 
 
-Run `request.py` if you are using EMOTIV device (which transmits data through Lab Streaming Layer) with:
+Run `request.py` if you are using an EMOTIV device (which transmits data through the Lab Streaming Layer) with:
 
 ```
 python request.py
 ```
 
-If not using Lab Streaming Layer, user can experiment with random numbers from `pseudo_request.py` file with:
+If not using Lab Streaming Layer, the user can experiment with random numbers from the `pseudo_request.py` file with:
 
 ```
 python pseudo_request.py
